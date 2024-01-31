@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-button (click)="verCatalogo()">
+      <ion-icon name="book" class="finalizar-button" slot="start"></ion-icon>
+      Volver al Catalogo
+    </ion-button>
+    <ion-title size="large">Carrito</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-grid class="cart-grid">
+    <ion-row class="header-row">
+      <ion-col>Codigo</ion-col>
+      <ion-col>Descripción</ion-col>
+      <ion-col>Precio</ion-col>
+      <ion-col>Cantidad</ion-col>
+      <ion-col>SubTotal</ion-col>
+      <ion-col>Eliminar</ion-col>
+    </ion-row>
+
+    <ion-row *ngFor="let item of listaItemsCarrito; let i=index" class="data-row">
+      <ion-col>{{ item.idproducto }}</ion-col>
+      <ion-col>{{ item.descripcion }}</ion-col>
+      <ion-col>{{ item.precio }}</ion-col>
+      <ion-col>{{ item.cantidad }}</ion-col>
+      <ion-col>{{ item.cantidad! * item.precio! }}</ion-col>
+      <ion-col>
+        <ion-button color="danger" (click)="eliminarProductoCarrito(i)">Eliminar</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="total-row">
+      <ion-col></ion-col>
+      <ion-col></ion-col>
+      <ion-col></ion-col>
+      <ion-col>Total</ion-col>
+      <ion-col>S/.{{ total }}</ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-button (click)="VaciarCarrito()" expand="full" class="vaciar-button">
+    <ion-icon name="trash" slot="start"></ion-icon>
+    Vaciar carrito
+  </ion-button>
+  <!-- ... tu código HTML existente ... -->
+<ion-button (click)="finalizarCompra()" expand="full" class="finalizar-button">
+  <ion-icon name="logo-bitcoin" class="finalizar-button" slot="start"></ion-icon>
+  Finalizar Compra</ion-button>
+
+</ion-content>

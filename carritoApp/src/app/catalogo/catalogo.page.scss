@@ -1,0 +1,43 @@
+#container ion-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  #container ion-avatar {
+    margin-right: 10px; /* Ajusta el margen entre la foto y la descripción */
+  }
+  
+  #container ion-label {
+    flex: 1; /* Hace que la etiqueta ocupe todo el espacio restante */
+  }
+  
+  /* Ajustes generales para los botones */
+ion-button {
+    --border-radius: 8px;
+    --background: #4caf50; /* Color de fondo verde */
+    --color: #ffffff; /* Color del texto blanco */
+  }
+  
+  /* Estilo específico para el botón "Añadir al carrito" */
+  .add-to-cart-button {
+    font-weight: bold;
+  }
+  
+  /* Estilo específico para el botón del carrito en la barra de herramientas */
+  ion-button.cart-button {
+    font-weight: bold;
+  }
+  
+  /* Añade estilos para la animación de ondulación en el botón */
+  ion-ripple-effect {
+    color: #ffffff; /* Color del efecto de ondulación blanco */
+  }
+  
+  ion-button.with-products {
+    border: 2px solid yellow; /* Borde amarillo si hay productos en el carrito */
+  }
+  
+  ion-button.with-products:hover {
+    border: 2px solid green; /* Borde verde al pasar el mouse */
+  }
+  

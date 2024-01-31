@@ -1,0 +1,32 @@
+.cart-grid {
+    width: 100%;
+    margin: 10px;
+  }
+  
+  .header-row,
+  .data-row,
+  .total-row {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .header-row ion-col,
+  .data-row ion-col,
+  .total-row ion-col {
+    text-align: center;
+  }
+  
+  .vaciar-button {
+    margin-top: 20px;
+    --background: #dc3545; /* Color de fondo rojo (puedes cambiarlo) */
+    --color: #fff; /* Color del texto blanco */
+    --border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  .finalizar-button {
+    margin-top: 0px;
+    --background: #00ff1a; /* Color de fondo rojo (puedes cambiarlo) */
+    --color: #fff; /* Color del texto blanco */
+    --border-radius: 10px; /* Bordes redondeados */
+  }
+  

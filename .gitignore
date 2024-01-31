@@ -1,0 +1,63 @@
+# Ignorar archivos generados por el sistema
+Thumbs.db
+.DS_Store
+
+# Carpeta de dependencias de Node.js (para la aplicación Angular)
+/node_modules
+
+# Carpeta de dependencias de Composer (para la API en Laravel)
+/vendor
+
+# Archivos de respaldo de código de Visual Studio Code
+.vscode/
+
+# Archivo de configuración de entorno local (si utilizas uno)
+.env
+
+# Carpeta de archivos generados por la compilación de la aplicación Angular
+/dist
+
+# Carpeta de almacenamiento de archivos de respaldo de Laravel
+/storage/*.bak
+
+# Carpeta de registros de Laravel
+/storage/logs
+
+# Carpeta de sesiones de Laravel
+/storage/framework/sessions
+
+# Carpeta de caché de Laravel
+/storage/framework/cache
+
+# Carpeta de archivos de respaldo de Laravel
+/storage/framework/backups
+
+# Carpeta de archivos cargados (si Laravel almacena archivos cargados en storage)
+/storage/app/public
+
+# Carpeta de imágenes generadas por Laravel (si Laravel almacena imágenes generadas en storage)
+/storage/app/images
+
+# Carpeta de cache de Laravel Mix (para la construcción de activos)
+/public/mix-manifest.json
+
+# Carpeta de almacenamiento de archivos de subida (si se utiliza en la API)
+/public/uploads
+
+# Archivo de migración de base de datos generado automáticamente
+/database/migrations/*.php
+
+# Archivo de semilla de base de datos generado automáticamente
+/database/seeds/*.php
+
+# Archivo de configuración de Laravel Horizon (si se utiliza)
+/horizon.php
+
+# Archivo de configuración de Laravel Telescope (si se utiliza)
+/telescope.php
+
+# Archivo de configuración de Passport (si se utiliza)
+/passport.php
+
+# Archivo de configuración de Laravel Dusk (si se utiliza)
+/dusk.php
